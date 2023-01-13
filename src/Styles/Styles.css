@@ -1,0 +1,19 @@
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 1rem;
+}
+
+.inputbox{
+    width:47%;
+    
+}
+.inputGroup{
+    justify-content: center;
+    width: 47%;
+    border-spacing: 2rem;
+}
+.modalBody{
+    height: 400px; 
+}
