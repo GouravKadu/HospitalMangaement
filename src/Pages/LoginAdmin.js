@@ -10,7 +10,7 @@ export default function LoginAdmin(props) {
 
   const login=(e)=>{
     e.preventDefault();
-    fetch(api+ '/Login', {
+    fetch(api+ 'Login', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

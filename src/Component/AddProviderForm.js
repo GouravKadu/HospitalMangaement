@@ -17,7 +17,7 @@ const [show,setShow]=useState(false);
 const AddProvider =(e)=>
   {
     e.preventDefault();
-    fetch(`${api}/adduser`, {
+    fetch(`${api}adduser`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
