@@ -15,7 +15,7 @@ export default function ProivderList() {
   const [provider,setProvider]=useState({blogs:[]});
 
   const fetchProviderTable = async()=>{
-    const {data} = await axios("https://localhost:7291/api/provider")
+    const {data} = await axios(api)
     setProvider({blogs:data})
     // console.log(data)
   }

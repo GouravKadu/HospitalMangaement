@@ -4,9 +4,10 @@ import Swal from 'sweetalert2';
 
 import { toast, ToastContainer } from 'react-toastify';
 import * as ReactBootStrap from "react-bootstrap";
+import { api } from './Constants/Constants';
 export default function DeleteProvider(props) {
 const deleteHandler = ()=>{
-  fetch("https://localhost:7291/api/provider?providerId="+props.providerId,{
+  fetch(api+"?providerId="+props.providerId,{
     method:"DELETE",
   }).then((res)=>{
     if(res.status === 200){
